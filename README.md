@@ -9,7 +9,7 @@ We will review the results to discuss pros/cons and try to find a better way of 
 - The data should come from an API:
   - OLS api
   - BioSamples v4 api
-- Put your project in a separate folder `<name> - <technology>`
+- Put your project in a separate folder `<name>-<technology>`
 - Try to give a brief description of your project in a Readme.md file
 - If you like you can try multiple technologies
   - If you try more than 2 techonologis, think about create a base folder with your name and divide each project in a subfolder
