@@ -7,8 +7,8 @@ We will review the results to discuss pros/cons and try to find a better way of 
   - Search results list 
   - Single result specific page
 - The data should come from an API:
-  - OLS api
-  - BioSamples v4 api
+  - (OLS api)[http://www.ebi.ac.uk/ols/docs/api]
+  - (BioSamples v3 api)[https://www.ebi.ac.uk/biosamples/help/api]
 - Put your project in a separate folder `<name>-<technology>`
 - Try to give a brief description of your project in a Readme.md file
 - If you like you can try multiple technologies
