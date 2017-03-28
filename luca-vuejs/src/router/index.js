@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Search from '@/components/templates/Search'
-import Home from '@/components/templates/Home'
-import Term from '@/components/templates/Term'
+import Search from '@/components/pages/Search'
+import Home from '@/components/pages/Home'
+import Term from '@/components/pages/Term'
 
 Vue.use(Router)
 

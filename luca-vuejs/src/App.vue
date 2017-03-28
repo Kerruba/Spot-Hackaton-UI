@@ -1,7 +1,6 @@
 <template>
 <div id="app">
   <ebi-skip-to></ebi-skip-to>
-  <!-- <img src="./assets/logo.png"> -->
   <div data-sticky-container>
     <div id="local-masthead" data-sticky data-sticky-on="large" data-top-anchor="180" data-btm-anchor="300000">
       <header>
