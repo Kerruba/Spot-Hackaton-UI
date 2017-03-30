@@ -37,7 +37,7 @@ We need to understand pro/cons of each technology based on your experience. Try 
 - [React.js](https://facebook.github.io/react/) (Javascript)
 - [Vue.js](https://vuejs.org/) (Javascript Framework)
 - [Ember.js](https://emberjs.com/) (Javascript Framework)
-- [Angular](https://angular.io/) (Javascript Framework)
+- [Angular 2](https://angular.io/) (Javascript Framework)
 - [Aurelia](http://aurelia.io/) (Javascript Framework)
 - [Jekyll](https://jekyllrb.com/) (Ruby - Static site generator)
 - [Hugo](http://gohugo.io/) (Go - Static site generator)
