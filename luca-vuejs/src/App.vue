@@ -17,10 +17,10 @@
 </template>
 
 <script>
-    import EbiSkipTo from '@/components/parts/EbiSkipTo'
-    import EbiGlobalNav from '@/components/parts/EbiGlobalNav'
-    import EbiFooter from '@/components/parts/EbiFooter'
-    import EbiLocalNav from '@/components/parts/EbiLocalNav'
+    import EbiSkipTo from '@/components/pages/fragments/EbiSkipTo'
+    import EbiGlobalNav from '@/components/pages/fragments/EbiGlobalNav'
+    import EbiFooter from '@/components/pages/fragments/EbiFooter'
+    import EbiLocalNav from '@/components/pages/fragments/EbiLocalNav'
 
     export default {
       name: 'app',

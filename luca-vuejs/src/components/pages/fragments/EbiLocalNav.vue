@@ -12,7 +12,7 @@
 </template>
 
 <script>
-    import NavLinks from '@/components/parts/NavLinks'
+    import NavLinks from '@/components/pages/fragments/NavLinks'
     export default {
       components: {
         'main-nav': NavLinks
