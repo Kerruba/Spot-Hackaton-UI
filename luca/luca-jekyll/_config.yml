@@ -5,6 +5,8 @@ email: noreply@ebi.ac.uk
 domain: //ebiwd.github.io
 baseurl: /EBI-Boilerplate-Jekyll
 permalink: pretty
+source: ./
+destination: ./dist
 
 # Add custom CSS / JS here
 # custom_css:
