@@ -1,4 +1,4 @@
-package uk.ac.ebi.biosamples;
+package uk.ac.ebi.biosamples.markdown;
 
 import org.springframework.web.servlet.view.AbstractTemplateViewResolver;
 

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import uk.ac.ebi.biosamples.MarkdownHandler;
+import uk.ac.ebi.biosamples.markdown.MarkdownHandler;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;

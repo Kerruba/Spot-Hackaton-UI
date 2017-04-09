@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.ViewResolver;
+import uk.ac.ebi.biosamples.markdown.MarkdownHandler;
+import uk.ac.ebi.biosamples.markdown.MarkdownViewResolver;
 
 @SpringBootApplication
 public class LucaThymeleafApplication {
@@ -21,7 +23,7 @@ public class LucaThymeleafApplication {
 	public ViewResolver getViewResolver(){
 		MarkdownViewResolver resolver = new MarkdownViewResolver();
 		resolver.setSuffix(".md");
-//		resolver.setOrder(0);
+		resolver.setOrder(0);
 		return resolver;
 	}
 }
