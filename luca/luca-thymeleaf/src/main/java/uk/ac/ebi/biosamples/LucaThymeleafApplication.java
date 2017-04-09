@@ -2,8 +2,10 @@ package uk.ac.ebi.biosamples;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.util.PropertyPlaceholderHelper;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ViewResolver;
 import uk.ac.ebi.biosamples.markdown.MarkdownHandler;
 import uk.ac.ebi.biosamples.markdown.MarkdownViewResolver;
@@ -34,5 +36,9 @@ public class LucaThymeleafApplication {
 		return new PropertyPlaceholderHelper("{","}");
 	}
 
+	@Bean
+	public RestTemplate restTemplate(RestTemplateBuilder builder) {
+		return builder.build();
+	}
 
 }
