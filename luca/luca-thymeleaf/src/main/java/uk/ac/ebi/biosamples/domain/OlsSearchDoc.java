@@ -1,7 +1,9 @@
 package uk.ac.ebi.biosamples.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonInclude(JsonInclude.Include.NON_ABSENT)
 public class OlsSearchDoc {
 
     @JsonProperty("iri")

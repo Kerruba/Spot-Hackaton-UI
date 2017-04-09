@@ -6,7 +6,7 @@
 </head>
 <body>
     <ul>
-        <li th:each="onto: ${ontologies}" th:text="${onto}"> </li>
+        <li th:each="onto: ${ontologies}" th:text="${onto.ontology}"></li>
     </ul>
 </body>
 </html>

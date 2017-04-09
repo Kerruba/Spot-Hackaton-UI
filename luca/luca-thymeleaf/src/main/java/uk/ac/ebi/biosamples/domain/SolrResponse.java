@@ -5,26 +5,26 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 public class SolrResponse {
-    @JsonProperty("numFound")
-    long numFound;
 
-    @JsonProperty("start")
-    long start;
+    @JsonProperty("response")
+    InnerResponse response;
 
-    @JsonProperty("docs")
-    List<OlsSearchDoc> docs;
-
-    public long getNumFound() {
-        return numFound;
+    public InnerResponse getResponse() {
+        return response;
     }
 
-    public long getStart() {
-        return start;
+    public class InnerResponse {
+        @JsonProperty("numFound")
+        long numFound;
+
+        @JsonProperty("start")
+        long start;
+
+        @JsonProperty("docs")
+        List<OlsSearchDoc> docs;
+
+        public List<OlsSearchDoc> getDocs() {
+            return docs;
+        }
     }
-
-    public List<OlsSearchDoc> getDocs() {
-        return docs;
-    }
-
-
 }

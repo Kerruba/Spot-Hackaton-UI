@@ -40,7 +40,7 @@ public class BaseController {
 
         ResponseEntity<SolrResponse> apiResponse = restTemplate.getForEntity(requestUrl, SolrResponse.class);
         if (apiResponse.getStatusCode().is2xxSuccessful()) {
-            model.addAttribute("ontologies", apiResponse.getBody().getDocs());
+            model.addAttribute("ontologies", apiResponse.getBody().getResponse().getDocs());
             return "ontologies";
         } else {
             throw new NotFoundException("No results is available for search term " + searchTerm);
