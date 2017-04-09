@@ -5,8 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-    <ul>
-        <li th:each="onto: ${ontologies}" th:text="${onto.ontology}"></li>
-    </ul>
+    <table>
+        <tbody>
+            <tr th:each="onto: ${ontologies}">
+                <td th:text="${onto.ontology}"></td>
+                <td>
+                    <th:span th:text="${onto.label}"></th:span>
+                    <small th:text="${onto.iri}"></small>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
