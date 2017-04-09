@@ -26,4 +26,6 @@ public class LucaThymeleafApplication {
 		resolver.setOrder(0);
 		return resolver;
 	}
+
+
 }
