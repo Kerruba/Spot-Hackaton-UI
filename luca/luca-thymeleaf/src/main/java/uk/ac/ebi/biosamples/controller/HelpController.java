@@ -23,7 +23,7 @@ public class HelpController {
         this.markdownHandler = markdownHandler;
     }
 
-    @GetMapping
+    @GetMapping("/")
     public String index(Model model) throws IOException {
 
         String md = getMarkdown("/templates/help/index.md");

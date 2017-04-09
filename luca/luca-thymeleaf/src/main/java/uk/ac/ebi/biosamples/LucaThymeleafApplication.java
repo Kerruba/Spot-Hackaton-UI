@@ -3,6 +3,7 @@ package uk.ac.ebi.biosamples;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.util.PropertyPlaceholderHelper;
 import org.springframework.web.servlet.ViewResolver;
 import uk.ac.ebi.biosamples.markdown.MarkdownHandler;
 import uk.ac.ebi.biosamples.markdown.MarkdownViewResolver;
@@ -22,9 +23,15 @@ public class LucaThymeleafApplication {
 	@Bean
 	public ViewResolver getViewResolver(){
 		MarkdownViewResolver resolver = new MarkdownViewResolver();
+		resolver.setPrefix("templates/");
 		resolver.setSuffix(".md");
 		resolver.setOrder(0);
 		return resolver;
+	}
+
+	@Bean
+	public PropertyPlaceholderHelper olsApiHelper() {
+		return new PropertyPlaceholderHelper("{","}");
 	}
 
 
