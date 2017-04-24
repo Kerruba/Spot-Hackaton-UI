@@ -20,7 +20,7 @@ router.get('/:page', function(req, res) {
       res.send(marked(result))
     })
     .catch(error => {
-      console.log(error)
+      console.error(error)
       res.sendFile(path.join(__dirname, '../views/error.html'))
     })
 })
