@@ -1,3 +1,5 @@
+
+My initial setup   
       
 Install and update node/npm
 ```
@@ -22,17 +24,11 @@ Web package manager? webpack or browserify
 npm install -g browserify
 ```
 
-Get jquery, --save will add to your package.json --save-dev and --save-optional can also be used 
-
-```
-npm install --save jquery
-```
-
 Create a simple class for representing an ontology term
 
 
 For React Router
 
 ```
-npm install react-router-dom
+npm install react-router-dom --save
 ```
