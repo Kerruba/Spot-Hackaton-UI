@@ -38,7 +38,7 @@ class HomeView extends Component {
 
 // Component for a term page
 class TermView extends Component {
-    
+
     render() {
         return (
             <div>
@@ -65,7 +65,7 @@ class Term extends Component {
             .then( response => response.json() )
             .then( json => { this.setState({term: json._embedded.terms[0]} );
             });
-     }
+    }
 
     render() {
         return (
@@ -78,7 +78,14 @@ class Term extends Component {
     }
 }
 
-class Search extends React.Component{
+class TermAnnotation extends Component {
+
+    render() {
+        return <div>{this.props.key} : {this.props.value}</div>
+    }
+}
+
+class Search extends Component{
 
     constructor(props) {
         super(props);
@@ -121,7 +128,7 @@ class Search extends React.Component{
     }
 }
 
-class SearchResults extends React.Component{
+class SearchResults extends Component{
     render() {
         var terms = this.props.searchResults.map(term =>
             <SearchTermSummary key={term.iri+term.ontology_name} term={term}/>
@@ -142,7 +149,7 @@ class SearchResults extends React.Component{
     }
 }
 
-class SearchTermSummary extends React.Component{
+class SearchTermSummary extends Component{
     render() {
         return (
             <tr>
