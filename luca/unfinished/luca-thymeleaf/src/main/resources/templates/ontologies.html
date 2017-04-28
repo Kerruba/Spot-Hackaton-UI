@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr th:each="onto: ${ontologies}">
+                <td th:text="${onto.ontology}"></td>
+                <td>
+                    <th:span th:text="${onto.label}"></th:span>
+                    <small th:text="${onto.iri}"></small>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

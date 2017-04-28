@@ -1,0 +1,17 @@
+{
+  "name": "luca-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Kerruba",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "marked": "^0.3.6",
+    "pug": "^2.0.0-beta11"
+  }
+}

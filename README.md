@@ -28,6 +28,7 @@ We need to understand pro/cons of each technology based on your experience. Try 
   - Is the documentation easy to understand?
   - Is the technology well supported?
   - How easy is to find resources about the technology?
+- Pros/Cons
 
 ## Outcome
 - Should we switch paradigm from a monolith application to an API supported website?
