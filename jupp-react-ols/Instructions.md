@@ -28,4 +28,11 @@ Get jquery, --save will add to your package.json --save-dev and --save-optional 
 npm install --save jquery
 ```
 
-Create a simple class for represneting an ontology term
+Create a simple class for representing an ontology term
+
+
+For React Router
+
+```
+npm install react-router-dom
+```
